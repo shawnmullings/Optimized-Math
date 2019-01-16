@@ -4,19 +4,19 @@ let print = n => {
     let output = "is";
     // Check if 'num' is divisible by both two and three
     if (num % 3 === 0 && num % 2 === 0) {
-      output = "divisible by two and three";
+      output += "divisible by two and three";
     }
     // Check if 'num' is divisible by only three
     else if (num % 3 === 0) {
-      output = "divisible by three";
+      output += "divisible by three";
     }
     // Check if 'num' is divisible by only two and considered an even number
     else if (num % 2 === 0) {
-      output = "even";
+      output += "even";
     }
     // 'num' is considered an odd number
     else {
-      output = "odd";
+      output += "odd";
     }
     // Print to console
     console.log("The number '" + num + "' " + output + ".");
